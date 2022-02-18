@@ -1,0 +1,65 @@
+{
+  "name": "@theorylabs/dietpi-creator",
+  "version": "0.0.1",
+  "private": true,
+  "license": "SEE LICENSE IN 🍺T️HEORYLABS_LICENSE",
+  "description": "[🍺️TheoryLabs/DietPiCreator] Repo includes a slew of tools for crafting customized, self-tailored versions of DietPi [Michalng/DietPi (github.com/MichaIng/DietPi)]. For now, tools reflect building against fork of DietPi master Github repository (see https://github.com/TheoryLabs/DietPi). Just until a more logical path for development (i.e. e2e testing, unit tests, CI, etc.) is figured out. For more in-depth detail on what this is all about, as well as where to get started, see README.  ",
+  "author": {
+    "name" : "Branden Dane",
+    "email" : "Dane@TheoryLabs.dev",
+    "url" : "WhoAmI.TheoryLabs.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheoryLabs/DietPiCreator.git"
+  },
+  "homepage": "https://github.com/TheoryLabs/DietPiCreator#README",
+  "bugs": {
+    "url" : "https://github.com/TheoryLabs/DietPiCreator/issues",
+    "email" : "DietPiCreatorProjectIssues@TheoryLabs.dev"
+  },
+  "configs": {
+    "dietpi_repo_version_control_provider": "https://github.com",
+    "dietpi_repo_project_owner": "TheoryLabs",
+    "dietpi_repo_project_name": "DietPi",
+    "dietpi_repo_project_origin_established_branch_names_list": [
+      "master",
+      "dev",
+      "motioneye",
+      "beta",
+      "pre-v6.14",
+      "stretch",
+      "xu4_kernel"
+    ],
+    "dietpi_repo_project_fork_aliased_branch_names_list": [
+      [
+        "master", 
+        "main"
+      ],
+      [
+        "dev",
+        "development"
+      ],
+      [
+        "beta",
+        "unstable"
+      ]
+    ],
+    "project_worktree_trunk_names_list": [
+      "Externals"
+    ],
+    "project_worktree_branch_names_list": [ 
+      "DIET_PI"
+    ],
+    "project_worktree_leaf_names_list": [
+      ".origin",
+      ".imgs"
+    ]
+  },
+  "workspaces": [
+    "./workspaces/**/*"
+  ],
+  "scripts": {
+    "hello": "echo 'WORLD!'"
+  }
+}
